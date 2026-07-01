@@ -67,4 +67,4 @@
 
 ---
 
-*Submitted by: [Imaobong Uwah] · [imauwah]*
+*Submitted by: Imaobong Uwah · imauwah*
