@@ -35,7 +35,6 @@
 <!-- What was most valuable to you personally from this session? -->
 The biggest takeaway for me is learning how incredibly flexible Conditional Access is. Seeing how it can be fine-tuned to stop risky sign-ins in real-time showed me how modern companies stop cyber attacks before they even happen.
 
-
 ---
 
 ## Questions I Still Have
