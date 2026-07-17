@@ -36,6 +36,10 @@
   - High risk of policy drift.
   - A separate permission model per vault.
   - Still visible in many existing environments.
+    
+**Managed Identity Secret retrieval flow**
+<img width="940" height="378" alt="image" src="https://github.com/user-attachments/assets/af8cc48b-786e-4034-a7bd-16019e36c878" />
+
 
 **Managed identities**
 - **System-assigned identity** — a one-to-one relationship between identity and resource. It's tied to a specific resource, can't be shared, and is deleted automatically when the resource is deleted. Best for simple, single-resource workloads.
@@ -50,24 +54,6 @@
 - Provides HSM support, certificate auto-renewal, key rotation policies, and CSPM secret scanning.
 - Not enabled by default — must be turned on manually in the Azure portal under Microsoft Defender for Cloud.
 
----
-
-## Lab / Hands-On Work
-<!-- Describe what you did in the lab. Include steps, commands, or screenshots descriptions -->
-
-**Lab: Deploy and Configure Access** *(Azure Key Vault)*
-
-### What I did
-
-
-### What happened / Result
-
-
-### Challenges I faced
-
-
----
-
 ## My Takeaways
 <!-- What was most valuable to you personally from this session? -->
 Understanding the split between the control plane and data plane clarified why an administrator can manage a vault's configuration without ever being able to read its secrets — and why Azure RBAC is the safer, more auditable choice over legacy Vault Access Policies.
@@ -78,20 +64,19 @@ Seeing how a single exposed secret (like a SAS token in an AI script) can cascad
 
 ## Questions I Still Have
 <!-- Anything you want to follow up on or ask the mentor -->
--
+-I want to do the Lab but failed to get access to the Portal.
 -
 
 ---
 
 ## Resources I Found Useful
 <!-- Any links, docs, or Microsoft Learn modules you found helpful -->
-- [Configure and manage secrets in Azure Key Vault — Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/configure-and-manage-azure-key-vault/)
 - [Implement Azure Key Vault — Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/implement-azure-key-vault/)
 - [Microsoft Defender for Key Vault: benefits and features](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-key-vault-introduction)
 - [Security recommendations for AI workloads on Azure infrastructure — Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/infrastructure/security)
 - [Azure AI security best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/ai-security-best-practices)
 - [Understand how Microsoft Defender for Cloud supports AI security and governance in Azure — Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/defender-for-cloud-ai-understand-protections/)
-- [Study guide for Exam SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500)
+
 
 ---
 
